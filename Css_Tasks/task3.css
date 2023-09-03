@@ -1,0 +1,36 @@
+*{
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin-top: 5%;
+    width: 100%;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+tr{
+    border: 2px solid #dddddd;
+}
+
+th:nth-child(1){
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+tr:nth-child(1) {
+    background-color: #09aa6d;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #dddddd;
+}

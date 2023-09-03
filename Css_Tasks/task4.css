@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+main {
+    max-width: fit-content;
+    border: 1px solid black;
+    padding: 5px;
+    height: 10%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.side--nav div {
+    position: absolute;
+    transition: 0.5s;
+    padding: 15px;
+    width: 100px;
+    left: -70px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+.side--nav div:hover {
+    left: 0;
+}
+
+.sidebtn--1 {
+    top: 20px;
+    background-color: rgb(43, 196, 43);
+}
+
+.sidebtn--2 {
+    top: 80px;
+    background-color: rgb(59, 196, 242);
+}
+
+.sidebtn--3 {
+    top: 140px;
+    background-color: red;
+}
+
+.sidebtn--4 {
+    top: 200px;
+    background-color: gray;
+}
+
+p{
+    font-weight: 100;
+}
