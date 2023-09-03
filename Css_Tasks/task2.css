@@ -1,0 +1,50 @@
+.main{
+    font-weight: 100;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.nav--outer{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.v--nav{
+    background-color: #bdd9e4;
+    color: blue;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.v--nav li{
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.v--nav li:hover{
+    background-color: #e7a93c;
+    color: white;
+}
+
+.h--nav {
+    display: flex;
+    justify-content: space-around;
+    color: blue;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+.h--nav li {
+    padding: 14px 16px;
+    border-right: 1px solid blue;
+}
+
+.h--nav li:hover {
+    background-color: gray;
+    color: white;
+}
