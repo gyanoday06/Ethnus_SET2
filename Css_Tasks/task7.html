@@ -1,64 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./task7.css">
-    <title>Task 7</title>
+    <title>Document</title>
 </head>
+
 <body>
-    <a href="/EthnusMERN/index.html">
+
+    <a href="/index.html">
         <h1 style="text-decoration: underline;">INDEX</h1>
     </a>
-    
+
     <main>
-        <section>
-            <form class="form--container">
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" placeholder="your name"> <br>
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" placeholder="your email"> <br>
-                </div>
-                <div>
-                    <label for="password">Password:</label>
-                    <input type="password"> <br>
-                </div>
-                <div class="ph--no">
-                    <label for="phone_number"><p>Phone Number:</p></label>
-                    <input type="number"> <br>
-                </div>
-                <div class="radio--btns">
-                    <label for="gender">Gender:</label>
-                    Male:<input type="radio" name="male" id="m">
-                    Female:<input type="radio" name="female" id="f">
-                    Other:<input type="radio" name="other" id="o">
-                </div>
-                <div class="--lang">
-                    <label for="language">Language:</label>
-                    <select name="language" id="lang">
-                        <option value="default">Select Language</option>
-                        <option value="english">English</option>
-                        <option value="hindi">Hindi</option>
-                        <option value="tamil">Tamil</option>
-                        <option value="french">French</option>
-                        <option value="malayalam">Malayalam</option>
-                        <option value="spanish">Spanish</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="zip">Zip Code:</label>
-                    <input type="number" name="zip" id="zip">
-                </div>
-                <div class="about">
-                    <label for="about">About: </label>
-                    <textarea name="about" id="about" cols="22" rows="2" placeholder="Write about yourself..."></textarea>
-                </div>
-                <button><p>Register</p></button>
-            </form>
-        </section>
+
+        <form>
+            <center>
+                <table>
+                    <tr>
+                        <td><label for="fn">Name:</label></td>
+                        <td><input type="text" name="nm" placeholder="Enter your Name" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="un">Email:</label></td>
+                        <td><input type="email" name="un" placeholder="Enter your Email" /></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="pwd">Password:</label><br></td>
+                        <td><input type="password" id="pwd" name="pwd" placeholder="Enter your password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ag">Phone Number:</label></td>
+                        <td><input type="number" name="pn" placeholder="Enter your phone number" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gen">Gender:</label></td>
+                        <td><label for="Gender">Male</label>
+                            <input type="radio" name="Gender" value="Male">
+                            <label for="Gender">Female</label>
+                            <input type="radio" name="Gender" value="Female">
+                            <label for="Gender">Other</label>
+                            <input type="radio" name="Gender" value="Other">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Language:</label></td>
+                        <td>
+                            <select name='Choose your Language' value="Choose your Language">
+                                <option>English</option>
+                                <option>Hindi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="st">Zipcode</label></td>
+                        <td><input type="number" name="zp" placeholder="Enter your Zipcode" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ad">About</label></td>
+                        <td><textarea>Write About Yourself</textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <center>
+                                <input type="submit" value="Register" />
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </form>
     </main>
 </body>
+
 </html>
