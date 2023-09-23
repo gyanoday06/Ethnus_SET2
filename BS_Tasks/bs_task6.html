@@ -13,7 +13,7 @@
 
 <body>
 
-    <a href="/EthnusMERN/index.html">
+    <a href="../index.html">
         <h1 style="text-decoration: underline;">INDEX</h1>
     </a> <br>
 
@@ -45,7 +45,14 @@
                     </div>
                     <div class="mb-3">
                         <label for="hobbies" class="form-label">Hobbies</label>
-                        <input type="number" class="form-control">
+                        <input type="text" class="form-control" list="hobbiesList" id="hobbies" required>
+                        <datalist id="hobbiesList">
+                            <option value="Badminton">
+                            <option value="Cricket">
+                            <option value="Swimming">
+                            <option value="Photography">
+                            <option value="Movies">
+                        </datalist>
                     </div>
                     <button type="submit" class="btn btn-danger w-100">Sign in</button>
                 </form>
