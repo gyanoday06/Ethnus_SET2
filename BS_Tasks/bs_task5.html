@@ -18,14 +18,13 @@
 <body>
 
     <a href="../index.html">
-        <h1 style="text-decoration: underline;">INDEX</h1>
+        <h1 style="text-decoration: underline; margin-left: 1%;">INDEX</h1>
     </a>
     <br>
     <main>
         <form>
             <center>
                 <table>
-                    <!-- First Name Field -->
                     <tr>
                         <td><label for="fn">First Name</label></td>
                         <td>
@@ -33,14 +32,13 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
                                 <input type="text" class="form-control" placeholder="First name" aria-label="First name"
                                     aria-describedby="basic-addon1" id="fn" required>
-                                <!-- Add is-invalid class to indicate validation error -->
                                 <div class="invalid-feedback">
-                                    First Name is required.
+                                    Please supply your first name
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <!-- Last Name Field -->
+
                     <tr>
                         <td><label for="ln">Last Name</label></td>
                         <td>
@@ -48,15 +46,13 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
                                 <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name"
                                     aria-describedby="basic-addon1" id="ln" required>
-                                <!-- Add is-invalid class to indicate validation error -->
                                 <div class="invalid-feedback">
-                                    Last Name is required.
+                                    Please supply your last name
                                 </div>
                             </div>
                         </td>
                     </tr>
 
-                    <!-- E-Mail Field -->
                     <tr>
                         <td><label for="email">E-Mail</label></td>
                         <td>
@@ -65,15 +61,13 @@
                                         class="fa-solid fa-envelope"></i></span>
                                 <input type="email" class="form-control" placeholder="E-Mail Address" aria-label="Email"
                                     aria-describedby="basic-addon1" id="email" required>
-                                <!-- Add is-invalid class to indicate validation error -->
                                 <div class="invalid-feedback">
-                                    Email is required.
+                                    Please supply your email address
                                 </div>
                             </div>
                         </td>
                     </tr>
 
-                    <!-- Phone Number Field -->
                     <tr>
                         <td><label for="phone">Phone #</label></td>
                         <td>
@@ -82,15 +76,13 @@
                                         class="fa-solid fa-phone"></i></span>
                                 <input type="number" class="form-control" placeholder="(845)555-1212" aria-label="Phone"
                                     aria-describedby="basic-addon1" id="phone" required>
-                                <!-- Add is-invalid class to indicate validation error -->
                                 <div class="invalid-feedback">
-                                    Phone Number is required.
+                                    Please supply your phone number
                                 </div>
                             </div>
                         </td>
                     </tr>
 
-                    <!-- Address Field -->
                     <tr>
                         <td><label for="address">Address</label></td>
                         <td>
@@ -99,15 +91,13 @@
                                         class="fa-solid fa-house"></i></span>
                                 <input type="text" class="form-control" placeholder="Address" aria-label="Address"
                                     aria-describedby="basic-addon1" id="address" required>
-                                <!-- Add is-invalid class to indicate validation error -->
                                 <div class="invalid-feedback">
-                                    Address is required.
+                                    Please supply your address
                                 </div>
                             </div>
                         </td>
                     </tr>
 
-                    <!-- City Field -->
                     <tr>
                         <td><label for="city">City</label></td>
                         <td>
@@ -116,36 +106,29 @@
                                         class="fa-solid fa-house"></i></span>
                                 <input type="text" class="form-control" placeholder="City" aria-label="City"
                                     aria-describedby="basic-addon1" id="city" required>
-                                <!-- Add is-invalid class to indicate validation error -->
                                 <div class="invalid-feedback">
-                                    City is required.
+                                    Please supply your city
                                 </div>
                             </div>
                         </td>
                     </tr>
 
-                    <!-- State Field -->
                     <tr>
                         <td><label for="state">State</label></td>
                         <td>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-list"></i></span>
                                 <select class="form-select" id="inputGroupSelect03"
-                                    aria-label="Example select with button addon" required>
+                                    aria-label="Example select with button addon">
                                     <option selected>Please select your state</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                                <!-- Add is-invalid class to indicate validation error -->
-                                <div class="invalid-feedback">
-                                    Please select your State.
-                                </div>
                             </div>
                         </td>
                     </tr>
 
-                    <!-- Hosting Field -->
                     <tr>
                         <td><label>Do you have hosting?</label></td>
                         <td>
@@ -157,14 +140,12 @@
                         </td>
                     </tr>
 
-                    <!-- Project Description Field -->
                     <tr>
                         <td><label for="projectDescription">Project Description</label></td>
                         <td>
                             <div class="md-form d-flex">
                                 <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-pen"></i></span>
-                                <textarea id="form7" class="md-textarea form-control" rows="2" id="projectDescription" placeholder="Project Description"
-                                    required></textarea>
+                                <textarea id="form7" class="md-textarea form-control" rows="2" id="projectDescription" placeholder="Project Description"></textarea>
                             </div>
                         </td>
                     </tr>
@@ -185,18 +166,25 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
-    <script>
-        const inputFields = document.querySelectorAll('.form-control:not(#form7, #inputGroupSelect03, [type="radio"])');
-        inputFields.forEach((input) => {
-            input.addEventListener('input', () => {
-                if (input.value.trim() === '') {
-                    input.classList.add('is-invalid');
-                } else {
-                    input.classList.remove('is-invalid');
-                }
+        <script>
+            const inputFields = document.querySelectorAll('.form-control:not(#form7, #inputGroupSelect03, [type="radio"])');
+            inputFields.forEach((input) => {
+                input.addEventListener('input', () => {
+                    const label = input.closest('tr').querySelector('label');
+                    const span = input.closest('.input-group').querySelector('.input-group-text');
+                    if (input.value.trim() === '') {
+                        input.classList.add('is-invalid');
+                        label.classList.add('text-danger'); // Add red color to label text
+                        span.classList.add('text-danger'); // Add red color to span (icon)
+                    } else {
+                        input.classList.remove('is-invalid');
+                        label.classList.remove('text-danger'); // Remove red color from label text
+                        span.classList.remove('text-danger'); // Remove red color from span (icon)
+                    }
+                });
             });
-        });
-    </script>
+        </script>
+        
 
 </body>
 
