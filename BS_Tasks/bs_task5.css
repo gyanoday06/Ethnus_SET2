@@ -9,6 +9,7 @@ main {
 table {
     width: 50%;
     background-color: rgb(229, 229, 229);
+    border-radius: 5px;
 }
 
 th, td {
